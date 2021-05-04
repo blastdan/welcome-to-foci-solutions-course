@@ -1,0 +1,18 @@
+title: Welcome To Foci Solutions
+description: >-
+  A quick start to getting familiar with Foci Solutions and it's development
+  methodologies.
+template:
+  repo: welcome-to-foci-solutions-template
+  name: welcome-to-foci-solutions
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
